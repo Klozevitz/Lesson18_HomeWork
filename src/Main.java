@@ -1,15 +1,24 @@
 public class Main {
     public static void main(String[] args) {
         Integer[] arrayTask1234 = new Integer[] {12, 43, 100, 4, 24, 6, 63};
-        String[] arrayOfStringsTask5 = {"tube", "youtube", "alabama", "africa",
-                                        "antarctica", "arctica", "rambler"};
+        String[] arrayOfStringsTask5 = {"tube", "youtube", "alabama", "africa", "antarctica", "arctica", "rambler"};
         String[] arrayOfStrings1Task6 = {"tube", "elf", "fusion", "nail", "lock", "key", "Yellow"};
         String[] arrayOfStrings2Task6 = {"tube", "elf", "ghost", "nail", "lock", "key", "yellow"};
         String[] arrayOfStringsTask7 = {"tube", "year", "speed", "year", "tube", "range", "year", "tube", "tube",
-                                        "stock", "object", "year"};
+                                            "stock", "object", "year"};
+        String[] arrayOfStrings1Task8 = {"alpha", "brandy", "crash", "Java", "lie", "opportunity", "rock",
+                                            "towel", "Uranus", "victory", "zoo"};
+        String[] arrayOfStrings2Task8 = {"alpha", "brandy", "crash", "Java", "lie", "opportunity", "monk",
+                                            "towel", "Uranus", "victory", "zoo"};
+        String[] arrayOfStringsTask9Big = {"alpha", "brandy", "crash", "Java", "lie", "opportunity", "rock",
+                                            "towel", "Uranus", "victory", "zoo"};
+        String[] arrayOfStringsTask9Small1 = {"crash", "Java", "lie", "opportunity", "rock", "towel"};
+        String[] arrayOfStringsTask9Small2 = {"crash", "Java", "lie", "rock", "towel"};
+        String[] arrayOrStringsTask910 = {"crash", "Java", "lie", "opportunity", "rock", "towel", "Uranus"};
 
 
-        /*System.out.println("Task1");                                            //Task1
+
+        System.out.println("Task1");                                            //Task1
         List list1 = new List(arrayTask1234);
         System.out.print("Среднее арифметическое элементов списка ");
         list1.printList();
@@ -55,9 +64,50 @@ public class Main {
         list26.printList();
         System.out.println();
         System.out.println(HomeWork.task6(list26));
-        System.out.println();*/
+        System.out.println();
 
-        System.out.println("Task7");
+        System.out.println("Task7");                                            //Task07
         List list7 = new List(arrayOfStringsTask7);
+        list7.printList();
+        System.out.println();
+        System.out.println("С первым словом " + HomeWork.task7(list7, true) + " совпадений.");
+        System.out.println("С последним словом " + HomeWork.task7(list7, false) + " совпадений.");
+        System.out.println();
+
+        System.out.println("Task8");                                            //Task08
+        List list18 = new List(arrayOfStrings1Task8);
+        list18.printList();
+        System.out.println();
+        System.out.println(HomeWork.task8(list18));
+        List list28 = new List(arrayOfStrings2Task8);
+        list28.printList();
+        System.out.println();
+        System.out.println(HomeWork.task8(list28));
+        System.out.println();
+
+        System.out.println("Task9");                                            //Task09
+        List list9L1 = new List(arrayOfStringsTask9Big);
+        list9L1.printList();
+        System.out.println();
+        List list9L2 = new List(arrayOfStringsTask9Small1);
+        list9L2.printList();
+        System.out.println();
+        System.out.println(HomeWork.task9(list9L1, list9L2));
+        System.out.println();
+
+        list9L1.printList();
+        System.out.println();
+        list9L2 = new List(arrayOfStringsTask9Small2);
+        list9L2.printList();
+        System.out.println();
+        System.out.println(HomeWork.task9(list9L1, list9L2));
+        System.out.println();
+
+        System.out.println("Task10");                                           //Task10
+        List list10 = new List(arrayOrStringsTask910);
+        list10.printList();
+        System.out.println();
+        HomeWork.task10(list10);
+        list10.printList();
     }
 }

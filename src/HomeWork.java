@@ -65,7 +65,6 @@ public class HomeWork {
 
     public static boolean task6(List list) {
         Node nodeTmp = list.getHead();
-
         while (nodeTmp.getNextNode() != null) {
             if (Character.toLowerCase(nodeTmp.getValue().toString().charAt(nodeTmp.getValue().toString().length() - 1)) !=
                 Character.toLowerCase(nodeTmp.getNextNode().getValue().toString().charAt(0))) {
@@ -76,13 +75,76 @@ public class HomeWork {
         return true;
     }
 
-    public static int task7(List list, String value) {
-            if (!value.equalsIgnoreCase("first") && !value.equalsIgnoreCase("last")) {
-                return 0;
+    public static int task7(List list, boolean isFirst) {
+        Node nodeTmp = list.getHead();
+        Node nodeTmpFirstLast = list.getHead();
+        int count = 0;
+        if (isFirst) {
+            while (nodeTmp != null) {
+                if (nodeTmpFirstLast.getValue().toString().equalsIgnoreCase(nodeTmp.getValue().toString())) {
+                    count ++;
+                }
+                nodeTmp = nodeTmp.getNextNode();
             }
-            else {
+        }
+        else {
+            while (nodeTmp.getNextNode() != null) {
+                nodeTmp = nodeTmp.getNextNode();
+            }
+            nodeTmpFirstLast = nodeTmp;
+            nodeTmp = list.getHead();
+            while (nodeTmp != null) {
+                if (nodeTmpFirstLast.getValue().toString().equalsIgnoreCase(nodeTmp.getValue().toString())) {
+                    count ++;
+                }
+                nodeTmp = nodeTmp.getNextNode();
+            }
+        }
+        return count;
+    }
 
+    public static boolean task8(List list){
+        Node nodeTmp = list.getHead();
+        while (nodeTmp.getNextNode() != null) {
+            if(Character.toLowerCase(nodeTmp.getValue().toString().charAt(0))  >
+                    Character.toLowerCase(nodeTmp.getNextNode().getValue().toString().charAt(0)) ){
+                return false;
             }
-        return 0;
+            nodeTmp = nodeTmp.getNextNode();
+        }
+        return true;
+    }
+
+    public static boolean task9(List listBig, List listSmall) {
+        StringBuilder stringBuilderBig = new StringBuilder();
+        StringBuilder stringBuilderSmall = new StringBuilder();
+        Node nodeTmp = listBig.getHead();
+        while (nodeTmp != null) {
+            stringBuilderBig.append(nodeTmp.getValue().toString());
+            nodeTmp = nodeTmp.getNextNode();
+        }
+        nodeTmp = listSmall.getHead();
+        while (nodeTmp != null) {
+            stringBuilderSmall.append(nodeTmp.getValue().toString());
+            nodeTmp = nodeTmp.getNextNode();
+        }
+        return (stringBuilderBig.toString().contains(stringBuilderSmall.toString()));
+    }
+
+    public static void task10(List list) {
+        Node nodeTmp = list.getHead();
+        int count = 1;
+        while (nodeTmp.getNextNode().getNextNode() != null) {
+            count++;
+            nodeTmp = nodeTmp.getNextNode();
+        }
+        for (int i = count; i > 0; i--) {
+            nodeTmp = list.getHead();
+            for (int j = 0; j < i - 1; j++) {
+                nodeTmp = nodeTmp.getNextNode();
+            }
+            list.push(nodeTmp.getValue());
+            list.pop(i - 1);
+        }
     }
 }
