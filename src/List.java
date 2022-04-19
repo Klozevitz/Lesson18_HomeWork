@@ -17,6 +17,13 @@ public class List {
         this.head = head;
     }
 
+    public List(Object[] arrayInput) {
+        this.head = new Node(arrayInput[0]);
+        for (int i = 1; i < arrayInput.length; i++) {
+            this.push(arrayInput[i]);
+        }
+    }
+
     public void printList() {
         System.out.print("[");
         Node nodeTmp = this.head;
@@ -24,7 +31,7 @@ public class List {
             System.out.print(nodeTmp.getValue() + ", ");
             nodeTmp = nodeTmp.getNextNode();
         }
-        System.out.println(nodeTmp.getValue() + "]");
+        System.out.print(nodeTmp.getValue() + "]");
     }
 
     public void push(Object value) {
