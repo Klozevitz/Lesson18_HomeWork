@@ -2,9 +2,11 @@ public class Main {
     public static void main(String[] args) {
         Integer[] arrayTask1234 = new Integer[] {12, 43, 100, 4, 24, 6, 63};
         String[] arrayOfStringsTask5 = {"tube", "youtube", "alabama", "africa",
-                "antarctica", "arctica", "rambler"};
-        String[] arrayOfStrings1Task6 = {"tube", "elf", "fusion", "nail", "lock", "key", "yellow"};
+                                        "antarctica", "arctica", "rambler"};
+        String[] arrayOfStrings1Task6 = {"tube", "elf", "fusion", "nail", "lock", "key", "Yellow"};
         String[] arrayOfStrings2Task6 = {"tube", "elf", "ghost", "nail", "lock", "key", "yellow"};
+        String[] arrayOfStringsTask7 = {"tube", "year", "speed", "year", "tube", "range", "year", "tube", "tube",
+                                        "stock", "object", "year"};
 
 
         /*System.out.println("Task1");                                            //Task1
@@ -52,6 +54,7 @@ public class Main {
         System.out.println(HomeWork.task6(list16));
         list26.printList();
         System.out.println();
-        System.out.println(HomeWork.task6(list26));*/
+        System.out.println(HomeWork.task6(list26));
+        System.out.println();*/
     }
 }

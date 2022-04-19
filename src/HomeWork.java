@@ -45,8 +45,8 @@ public class HomeWork {
 
         int counter = 0;
         while (nodeTemp != null) {
-            if (nodeTemp.getValue().toString().charAt(0) ==
-                    nodeTemp.getValue().toString().charAt(nodeTemp.getValue().toString().length() - 1)) {
+            if (Character.toLowerCase(nodeTemp.getValue().toString().charAt(0)) ==
+                Character.toLowerCase(nodeTemp.getValue().toString().charAt(nodeTemp.getValue().toString().length() - 1))) {
                 counter++;
             }
             nodeTemp = nodeTemp.getNextNode();
@@ -56,9 +56,10 @@ public class HomeWork {
 
     public static boolean task6(List list) {
         Node nodeTmp = list.getHead();
+
         while (nodeTmp.getNextNode() != null) {
-            if (nodeTmp.getValue().toString().charAt(nodeTmp.getValue().toString().length() - 1) !=
-                nodeTmp.getNextNode().getValue().toString().charAt(0)) {
+            if (Character.toLowerCase(nodeTmp.getValue().toString().charAt(nodeTmp.getValue().toString().length() - 1)) !=
+                Character.toLowerCase(nodeTmp.getNextNode().getValue().toString().charAt(0))) {
                 return false;
             }
             nodeTmp = nodeTmp.getNextNode();
