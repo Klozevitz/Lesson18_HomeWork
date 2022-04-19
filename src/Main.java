@@ -7,7 +7,7 @@ public class Main {
         String[] arrayOfStrings2Task6 = {"tube", "elf", "ghost", "nail", "lock", "key", "yellow"};
 
 
-        System.out.println("Task1");                                            //Task1
+        /*System.out.println("Task1");                                            //Task1
         List list1 = new List(arrayTask1234);
         System.out.print("Среднее арифметическое элементов списка ");
         list1.printList();
@@ -44,11 +44,14 @@ public class Main {
         System.out.println(" " + HomeWork.task5(list5) + " слов начинаются и заканчиваются на одну букву.");
         System.out.println();
 
-        System.out.println("Task6");
+        System.out.println("Task6");                                            //Task6
         List list16 = new List(arrayOfStrings1Task6);
         List list26 = new List(arrayOfStrings2Task6);
         list16.printList();
         System.out.println();
+        System.out.println(HomeWork.task6(list16));
         list26.printList();
+        System.out.println();
+        System.out.println(HomeWork.task6(list26));*/
     }
 }

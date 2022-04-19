@@ -53,4 +53,16 @@ public class HomeWork {
         }
         return counter;
     }
+
+    public static boolean task6(List list) {
+        Node nodeTmp = list.getHead();
+        while (nodeTmp.getNextNode() != null) {
+            if (nodeTmp.getValue().toString().charAt(nodeTmp.getValue().toString().length() - 1) !=
+                nodeTmp.getNextNode().getValue().toString().charAt(0)) {
+                return false;
+            }
+            nodeTmp = nodeTmp.getNextNode();
+        }
+        return true;
+    }
 }
