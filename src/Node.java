@@ -19,7 +19,7 @@ public class Node {
     }
 
     public Node() {
-        this.value = 0;
+        this.value = null;
         this.nextNode = null;
     }
 
