@@ -5,6 +5,14 @@ public class List {
         return head;
     }
 
+    public Node getTail() {
+        Node nodeTmp = this.head;
+        while (nodeTmp.getNextNode() != null) {
+            nodeTmp = nodeTmp.getNextNode();
+        }
+        return nodeTmp;
+    }
+
     public void setHead(Node head) {
         this.head = head;
     }

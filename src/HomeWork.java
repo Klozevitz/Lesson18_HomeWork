@@ -66,4 +66,14 @@ public class HomeWork {
         }
         return true;
     }
+
+    public static int task7(List list, String value) {
+            if (!value.equalsIgnoreCase("first") && !value.equalsIgnoreCase("last")) {
+                return 0;
+            }
+            else {
+
+            }
+        return 0;
+    }
 }

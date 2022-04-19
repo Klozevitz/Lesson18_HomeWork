@@ -56,5 +56,9 @@ public class Main {
         System.out.println();
         System.out.println(HomeWork.task6(list26));
         System.out.println();*/
+
+        System.out.println("Task7");
+        List list7 = new List(arrayOfStringsTask7);
+
     }
 }
