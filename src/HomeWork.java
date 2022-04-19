@@ -52,7 +52,6 @@ public class HomeWork {
 
     public static int task5(List list) {
         Node nodeTemp = list.getHead();
-
         int counter = 0;
         while (nodeTemp != null) {
             if (Character.toLowerCase(nodeTemp.getValue().toString().charAt(0)) ==
