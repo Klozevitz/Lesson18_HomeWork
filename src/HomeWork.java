@@ -9,12 +9,12 @@ public class HomeWork {
             nodeTemp = nodeTemp.getNextNode();
             listLength ++;
         }
-
         return ((double) sum / listLength);
     }
 
     public static void task2(List list) {
         Node nodeTemp = list.getHead();
+
         while (nodeTemp.getNextNode() != null) {
             nodeTemp = nodeTemp.getNextNode();
         }
@@ -22,9 +22,15 @@ public class HomeWork {
         list.pop();
     }
 
+    public static void task3(List list) {
+        list.push(list.getHead().getValue());
+        list.pop(0);
+    }
+
     public static void task4(List list) {
         Node nodeTemp = list.getHead();
         Node nodeTemp1 = list.getHead();
+
         while (nodeTemp.getNextNode() != null) {
             nodeTemp = nodeTemp.getNextNode();
         }
@@ -36,6 +42,7 @@ public class HomeWork {
 
     public static int task5(List list) {
         Node nodeTemp = list.getHead();
+
         int counter = 0;
         while (nodeTemp != null) {
             if (nodeTemp.getValue().toString().charAt(0) ==

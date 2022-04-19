@@ -22,8 +22,7 @@ public class Main {
         List list3 = new List(arrayTask1234);                                   //Task3
         list3.printList();
         System.out.println();
-        list3.push(list3.getHead().getValue());
-        list3.pop(0);
+        HomeWork.task3(list3);
         list3.printList();
         System.out.println("\n");
 
