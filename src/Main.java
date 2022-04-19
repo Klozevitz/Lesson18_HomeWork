@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Object[] arrayTask1234 = new Object[] {12, 43, 100, 4, 24, 6, 63};
+        Integer[] arrayTask1234 = new Integer[] {12, 43, 100, 4, 24, 6, 63};
         String[] arrayOfStringsTask5 = {"tube", "youtube", "alabama", "africa",
                 "antarctica", "arctica", "rambler"};
         String[] arrayOfStrings1Task6 = {"tube", "elf", "fusion", "nail", "lock", "key", "yellow"};
