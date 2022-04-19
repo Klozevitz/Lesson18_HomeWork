@@ -59,6 +59,5 @@ public class Main {
 
         System.out.println("Task7");
         List list7 = new List(arrayOfStringsTask7);
-
     }
 }

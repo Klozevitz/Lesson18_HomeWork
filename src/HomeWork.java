@@ -27,7 +27,7 @@ public class HomeWork {
         list.pop(0);
     }
 
-    public static void task4(List list) {
+    /*public static void task4(List list) {
         Node nodeTemp = list.getHead();
         Node nodeTemp1 = list.getHead();
 
@@ -38,6 +38,16 @@ public class HomeWork {
         list.pop(1);
         list.pop();
         list.push(nodeTemp1.getValue());
+    }*/
+    public static void task4 (List list) {
+        Node nodeTmp = list.getHead();
+        while (nodeTmp.getNextNode() != null) {
+            nodeTmp = nodeTmp.getNextNode();
+        }
+        list.push(nodeTmp.getValue(), 0);
+        list.pop();
+        list.push(list.getHead().getNextNode().getValue());
+        list.pop(1);
     }
 
     public static int task5(List list) {
