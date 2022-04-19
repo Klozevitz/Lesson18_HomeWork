@@ -2,7 +2,6 @@ public class Node {
     private Object value;
     private Node nextNode;
 
-
     public Object getValue() {
         return value;
     }
