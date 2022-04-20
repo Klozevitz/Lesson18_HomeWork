@@ -1,22 +1,6 @@
 public class List {
     private Node head;
 
-    public Node getHead() {
-        return head;
-    }
-
-    public Node getTail() {
-        Node nodeTmp = this.head;
-        while (nodeTmp.getNextNode() != null) {
-            nodeTmp = nodeTmp.getNextNode();
-        }
-        return nodeTmp;
-    }
-
-    public void setHead(Node head) {
-        this.head = head;
-    }
-
     public List() {
         this.head = null;
     }
@@ -30,6 +14,22 @@ public class List {
         for (int i = 1; i < arrayInput.length; i++) {
             this.push(arrayInput[i]);
         }
+    }
+
+    public Node getHead() {
+        return head;
+    }
+
+    public void setHead(Node head) {
+        this.head = head;
+    }
+
+    public Node getLast() {
+        Node nodeTmp = this.head;
+        while (nodeTmp.getNextNode() != null) {
+            nodeTmp = nodeTmp.getNextNode();
+        }
+        return nodeTmp;
     }
 
     public void printList() {
