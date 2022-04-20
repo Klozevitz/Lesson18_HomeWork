@@ -15,10 +15,10 @@ public class Main {
         String[] arrayOfStrings2Task8 = {"alpha", "brandy", "crash", "Java", "lie", "opportunity", "monk",
                                             "towel", "Uranus", "victory", "zoo"};
 
-        String[] arrayOfStringsTask9Big = {"alpha", "brandy", "crash", "Java", "lie", "opportunity", "rock",
+        String[] arrayOfStringsBigTask9 = {"alpha", "brandy", "crash", "Java", "lie", "opportunity", "rock",
                                             "towel", "Uranus", "victory", "zoo"};
-        String[] arrayOfStringsTask9Small1 = {"crash", "Java", "lie", "opportunity", "rock", "towel"};
-        String[] arrayOfStringsTask9Small2 = {"crash", "Java", "lie", "rock", "towel"};
+        String[] arrayOfStringsSmall1Task9 = {"crash", "Java", "lie", "opportunity", "rock", "towel"};
+        String[] arrayOfStringsSmall2Task9 = {"crash", "Java", "lie", "rock", "towel"};
 
         String[] arrayOrStringsTask10 = {"crash", "Java", "lie", "opportunity", "rock", "towel", "Uranus"};
 
@@ -92,10 +92,10 @@ public class Main {
         System.out.println();
 
         System.out.println("Task9");                                            //Task09
-        List list9L1 = new List(arrayOfStringsTask9Big);
+        List list9L1 = new List(arrayOfStringsBigTask9);
         list9L1.printList();
         System.out.println();
-        List list9L2 = new List(arrayOfStringsTask9Small1);
+        List list9L2 = new List(arrayOfStringsSmall1Task9);
         list9L2.printList();
         System.out.println();
         System.out.println(HomeWork.task9(list9L1, list9L2));
@@ -103,7 +103,7 @@ public class Main {
 
         list9L1.printList();
         System.out.println();
-        list9L2 = new List(arrayOfStringsTask9Small2);
+        list9L2 = new List(arrayOfStringsSmall2Task9);
         list9L2.printList();
         System.out.println();
         System.out.println(HomeWork.task9(list9L1, list9L2));
