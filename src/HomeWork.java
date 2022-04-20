@@ -39,8 +39,10 @@ public class HomeWork {
         list.pop();
         list.push(nodeTemp1.getValue());
     }*/
+
     public static void task4 (List list) {
         Node nodeTmp = list.getHead();
+
         while (nodeTmp.getNextNode() != null) {
             nodeTmp = nodeTmp.getNextNode();
         }
@@ -53,6 +55,7 @@ public class HomeWork {
     public static int task5(List list) {
         Node nodeTemp = list.getHead();
         int counter = 0;
+
         while (nodeTemp != null) {
             if (Character.toLowerCase(nodeTemp.getValue().toString().charAt(0)) ==
                 Character.toLowerCase(nodeTemp.getValue().toString().charAt(nodeTemp.getValue().toString().length() - 1))) {
@@ -65,6 +68,7 @@ public class HomeWork {
 
     public static boolean task6(List list) {
         Node nodeTmp = list.getHead();
+
         while (nodeTmp.getNextNode() != null) {
             if (Character.toLowerCase(nodeTmp.getValue().toString().charAt(nodeTmp.getValue().toString().length() - 1)) !=
                 Character.toLowerCase(nodeTmp.getNextNode().getValue().toString().charAt(0))) {
@@ -79,6 +83,7 @@ public class HomeWork {
         Node nodeTmp = list.getHead();
         Node nodeTmpFirstLast = list.getHead();
         int count = 0;
+
         if (isFirst) {
             while (nodeTmp != null) {
                 if (nodeTmpFirstLast.getValue().toString().equalsIgnoreCase(nodeTmp.getValue().toString())) {
@@ -105,6 +110,7 @@ public class HomeWork {
 
     public static boolean task8(List list){
         Node nodeTmp = list.getHead();
+
         while (nodeTmp.getNextNode() != null) {
             if(Character.toLowerCase(nodeTmp.getValue().toString().charAt(0))  >
                     Character.toLowerCase(nodeTmp.getNextNode().getValue().toString().charAt(0)) ){
@@ -119,6 +125,7 @@ public class HomeWork {
         StringBuilder stringBuilderBig = new StringBuilder();
         StringBuilder stringBuilderSmall = new StringBuilder();
         Node nodeTmp = listBig.getHead();
+
         while (nodeTmp != null) {
             stringBuilderBig.append(nodeTmp.getValue().toString());
             nodeTmp = nodeTmp.getNextNode();
@@ -134,6 +141,7 @@ public class HomeWork {
     public static void task10(List list) {
         Node nodeTmp = list.getHead();
         int count = 1;
+
         while (nodeTmp.getNextNode().getNextNode() != null) {
             count++;
             nodeTmp = nodeTmp.getNextNode();

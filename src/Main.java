@@ -1,19 +1,25 @@
 public class Main {
     public static void main(String[] args) {
         Integer[] arrayTask1234 = new Integer[] {12, 43, 100, 4, 24, 6, 63};
+
         String[] arrayOfStringsTask5 = {"tube", "youtube", "alabama", "africa", "antarctica", "arctica", "rambler"};
+
         String[] arrayOfStrings1Task6 = {"tube", "elf", "fusion", "nail", "lock", "key", "Yellow"};
         String[] arrayOfStrings2Task6 = {"tube", "elf", "ghost", "nail", "lock", "key", "yellow"};
+
         String[] arrayOfStringsTask7 = {"tube", "year", "speed", "year", "tube", "range", "year", "tube", "tube",
                                             "stock", "object", "year"};
+
         String[] arrayOfStrings1Task8 = {"alpha", "brandy", "crash", "Java", "lie", "opportunity", "rock",
                                             "towel", "Uranus", "victory", "zoo"};
         String[] arrayOfStrings2Task8 = {"alpha", "brandy", "crash", "Java", "lie", "opportunity", "monk",
                                             "towel", "Uranus", "victory", "zoo"};
+
         String[] arrayOfStringsTask9Big = {"alpha", "brandy", "crash", "Java", "lie", "opportunity", "rock",
                                             "towel", "Uranus", "victory", "zoo"};
         String[] arrayOfStringsTask9Small1 = {"crash", "Java", "lie", "opportunity", "rock", "towel"};
         String[] arrayOfStringsTask9Small2 = {"crash", "Java", "lie", "rock", "towel"};
+
         String[] arrayOrStringsTask10 = {"crash", "Java", "lie", "opportunity", "rock", "towel", "Uranus"};
 
 
