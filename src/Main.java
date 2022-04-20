@@ -14,7 +14,7 @@ public class Main {
                                             "towel", "Uranus", "victory", "zoo"};
         String[] arrayOfStringsTask9Small1 = {"crash", "Java", "lie", "opportunity", "rock", "towel"};
         String[] arrayOfStringsTask9Small2 = {"crash", "Java", "lie", "rock", "towel"};
-        String[] arrayOrStringsTask910 = {"crash", "Java", "lie", "opportunity", "rock", "towel", "Uranus"};
+        String[] arrayOrStringsTask10 = {"crash", "Java", "lie", "opportunity", "rock", "towel", "Uranus"};
 
 
 
@@ -104,7 +104,7 @@ public class Main {
         System.out.println();
 
         System.out.println("Task10");                                           //Task10
-        List list10 = new List(arrayOrStringsTask910);
+        List list10 = new List(arrayOrStringsTask10);
         list10.printList();
         System.out.println();
         HomeWork.task10(list10);
