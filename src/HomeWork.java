@@ -108,12 +108,20 @@ public class HomeWork {
         return count;
     }
 
+    public static boolean isAlphabet(String word1, String word2) {
+        for (int i = 0; i < Math.min(word1.length(), word2.length()); i++) {
+            if (Character.toLowerCase(word1.charAt(i)) != Character.toLowerCase(word2.charAt(i))) {
+                return ((Character.toLowerCase(word1.charAt(i)) < Character.toLowerCase(word2.charAt(i))));
+            }
+        }
+        return (word1.length() < word2.length());
+    }
+
     public static boolean task8(List list){
         Node nodeTmp = list.getHead();
 
         while (nodeTmp.getNextNode() != null) {
-            if(Character.toLowerCase(nodeTmp.getValue().toString().charAt(0))  >
-                    Character.toLowerCase(nodeTmp.getNextNode().getValue().toString().charAt(0)) ){
+            if(!isAlphabet(nodeTmp.getValue().toString(),nodeTmp.getNextNode().getValue().toString())){
                 return false;
             }
             nodeTmp = nodeTmp.getNextNode();
@@ -155,4 +163,20 @@ public class HomeWork {
             list.pop(i - 1);
         }
     }
+
+
+    /*public void reverse(){//Перевернуть список наоборот.
+        NodeGns nodeTmp = this.head;
+        NodeGns tmpA = null;
+        NodeGns tmpB = null;
+        int j=0;
+        while (nodeTmp != null) {
+            tmpA = nodeTmp;
+            nodeTmp = nodeTmp.getNextNode();
+            tmpA.setNextNode(tmpB);
+            tmpB=tmpA;
+        }
+        head=tmpA;
+    }//reverse
+*/
 }

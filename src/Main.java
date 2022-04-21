@@ -10,10 +10,10 @@ public class Main {
         String[] arrayOfStringsTask7 = {"tube", "year", "speed", "year", "tube", "range", "year", "tube", "tube",
                                             "stock", "object", "year"};
 
-        String[] arrayOfStrings1Task8 = {"alpha", "brandy", "crash", "Java", "lie", "opportunity", "rock",
-                                            "towel", "Uranus", "victory", "zoo"};
-        String[] arrayOfStrings2Task8 = {"alpha", "brandy", "crash", "Java", "lie", "opportunity", "monk",
-                                            "towel", "Uranus", "victory", "zoo"};
+        String[] arrayOfStrings1Task8 = {"alpha", "brandy", "crash", "java", "lie", "Opportunity", "rock",
+                                            "towel", "uranus", "Victory", "zoo"};
+        String[] arrayOfStrings2Task8 = {"alpha", "brandy", "crash", "java", "lie", "opportunity", "Rocknroll", "rock",
+                                            "towel", "uranus", "victory", "zoo"};
 
         String[] arrayOfStringsBigTask9 = {"alpha", "brandy", "crash", "Java", "lie", "opportunity", "rock",
                                             "towel", "Uranus", "victory", "zoo"};
@@ -24,7 +24,7 @@ public class Main {
 
 
 
-        System.out.println("Task1");                                            //Task1
+        /*System.out.println("Task1");                                            //Task1
         List list1 = new List(arrayTask1234);
         System.out.print("Среднее арифметическое элементов списка ");
         list1.printList();
@@ -76,9 +76,9 @@ public class Main {
         List list7 = new List(arrayOfStringsTask7);
         list7.printList();
         System.out.println();
-        System.out.println("С первым словом " + HomeWork.task7(list7, true) + " совпадений.");
-        System.out.println("С последним словом " + HomeWork.task7(list7, false) + " совпадений.");
-        System.out.println();
+        System.out.println("С первым словом " + HomeWork.task7(list7, true) + " совпадений (c учетом слова).");
+        System.out.println("С последним словом " + HomeWork.task7(list7, false) + " совпадений (с учетом слова).");
+        System.out.println();*/
 
         System.out.println("Task8");                                            //Task08
         List list18 = new List(arrayOfStrings1Task8);
@@ -91,7 +91,7 @@ public class Main {
         System.out.println(HomeWork.task8(list28));
         System.out.println();
 
-        System.out.println("Task9");                                            //Task09
+        /*System.out.println("Task9");                                            //Task09
         List list9L1 = new List(arrayOfStringsBigTask9);
         list9L1.printList();
         System.out.println();
@@ -114,6 +114,6 @@ public class Main {
         list10.printList();
         System.out.println();
         HomeWork.task10(list10);
-        list10.printList();
+        list10.printList();*/
     }
 }
