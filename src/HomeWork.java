@@ -129,6 +129,7 @@ public class HomeWork {
         return true;
     }
 
+
     public static boolean task9(List listBig, List listSmall) {
         StringBuilder stringBuilderBig = new StringBuilder();
         StringBuilder stringBuilderSmall = new StringBuilder();
